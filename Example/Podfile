@@ -1,0 +1,8 @@
+use_frameworks!
+
+
+target 'CDBUUID_Tests', :exclusive => true do
+  pod 'CDBUUID', :path => '../'
+
+  
+end
