@@ -6,10 +6,12 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
+@version = "1.0.0"
+
 Pod::Spec.new do |s|
   s.name             = "CDBUUID"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of CDBUUID."
+  s.version          = @version
+  s.summary          = "The CDBUUID provides methods for generating compact, unique ids"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,24 +19,21 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-                       DESC
+s.description      = "The CDBUUID class provides methods for generating compact, unique ids.
+  It based on `Identify` class of https://github.com/weaver/Identify
+  but with removed ASIdentifierManager which has issue when submitting to the app store
+  Ids are encoded as urlsafe base64 (letters, numbers, underscores, dashes),
+  any `=` padding is stripped off, and they are given a single character
+  prefix."
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/CDBUUID"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/yocaminobien/CDBUUID"
   s.license          = 'MIT'
   s.author           = { "yocaminobien" => "yocaminobien@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/CDBUUID.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/yocaminobien/CDBUUID.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/yocaminobien'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'CDBUUID/Classes/**/*'
-  s.resource_bundles = {
-    'CDBUUID' => ['CDBUUID/Assets/*.png']
-  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

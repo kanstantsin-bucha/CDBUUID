@@ -1,0 +1,6 @@
+framework module CDBUUID {
+  umbrella header "CDBUUID-umbrella.h"
+
+  export *
+  module * { export * }
+}

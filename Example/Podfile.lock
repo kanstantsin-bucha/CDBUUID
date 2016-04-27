@@ -1,0 +1,14 @@
+PODS:
+  - CDBUUID (1.0.0)
+
+DEPENDENCIES:
+  - CDBUUID (from `../`)
+
+EXTERNAL SOURCES:
+  CDBUUID:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CDBUUID: eaa3dcb1e19de6e61e639677a115e90e9f6bc1b6
+
+COCOAPODS: 0.38.2
