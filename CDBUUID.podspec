@@ -6,7 +6,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
-@version = "1.0.0"
+@version = "1.0.1"
 
 Pod::Spec.new do |s|
   s.name             = "CDBUUID"
@@ -26,13 +26,14 @@ s.description      = "The CDBUUID class provides methods for generating compact,
   any `=` padding is stripped off, and they are given a single character
   prefix."
 
-  s.homepage         = "https://github.com/yocaminobien/CDBUUID"
+  s.homepage         = "https://github.com/truebucha/CDBUUID"
   s.license          = 'MIT'
-  s.author           = { "yocaminobien" => "yocaminobien@gmail.com" }
-  s.source           = { :git => "https://github.com/yocaminobien/CDBUUID.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/yocaminobien'
+  s.author           = { "truebucha" => "truebucha@gmail.com" }
+  s.source           = { :git => "https://github.com/truebucha/CDBUUID.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/truebucha'
 
   s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.8'
 
   s.source_files = 'CDBUUID/Classes/**/*'
 
